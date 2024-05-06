@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulário</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <div class="formulario">
+                <form action="">
+                    <h1 class="formulario__titulo">Inscreva-se</h1>
+
+                    <input
+                        id="nome"
+                        type="text"
+                        placeholder="Nome Completo"
+                    /><br />
+
+                    <input id="cpf" type="number" placeholder="CPF" /><br />
+
+                    <input
+                        id="telefone"
+                        type="number"
+                        placeholder="Telefone"
+                    /><br />
+
+                    <input id="cep" type="number" placeholder="CEP" /><br />
+
+                    <input
+                        id="endereco"
+                        type="text"
+                        placeholder="Endereço"
+                    /><br />
+
+                    <input id="cidade" type="text" placeholder="Cidade" /><br />
+
+                    <input id="email" type="text" placeholder="E-mail" /><br />
+
+                    <input
+                        id="senha"
+                        type="password"
+                        placeholder="Senha"
+                    /><br />
+
+                    <div class="mostrarSenha">
+                        <input class="check" type="checkbox" onclick="show()" />
+                        <label for="check">Mostrar Caracteres</label>
+                    </div>
+
+                    <br />
+
+                    <div class="botoes">
+                        <input
+                            type="submit"
+                            value="Cancelar"
+                            class="cancelar"
+                        />
+
+                        <input type="submit" value="Enviar" class="enviar" />
+                    </div>
+                </form>
+            </div>
+
+            <div>
+                <a
+                    href="https://inovamaranhao.notion.site/Segundo-Desafio-Programa-o-3f79296e731c49dc9dec2eff6241953b"
+                    target="_blank"
+                >
+                    <img
+                        src="https://s3-alpha-sig.figma.com/img/413e/287b/dd6a5d27499b1d6e31c06cef3359b7ec?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jJtKLkMHzzbErOfZ5rfnHE7WUlAa1Qef4r~CU6ESiOfFrf-sKg1P-5VqnZHNXYZuhCur6SE2Qcu9XSx5GAYs4Y619LjqzGaijG8Imc9IePt9meD7fDKmMwJfNRIo~txGCwo~PcrywwCYOu8ZkzmOWZ6pO6eDBi8J9pwyCdt-9PgJ77rRZrBOV7IWiVAkGG3CsCfE9Je0dRUXA0lqKsmy~MqjKU-VFs~O-fltB-o~p9RTK7JPIceIxkS6f~XZG2AbBH0p2-QC-d-QwGGMH38t1p3EgELgNVhSZKdq4nEc49oQn--mRKhj2l-nRYWVUqv79R63-Xyc01s65cHqhB7Piw__"
+                        alt=""
+                    />
+                </a>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
