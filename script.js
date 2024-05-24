@@ -1,49 +1,31 @@
-function show() {
-    var senha = document.getElementById('senha')
+// function show() {
+//     var senha = document.getElementById('senha')
 
-    if (senha.type === 'password') {
-        senha.type = 'text'
-    } else {
-        senha.type = 'password'
-    }
-}
-
-document.getElementById('projetos').addEventListener('click', function () {
-    this.classList.add('clicked')
-})
-
-// var nome = 'Naum'
-// var sobreNome = 'Leal'
-// var atraso = 200
-// var textoElemento = document.querySelector('.apresentacao__conteudo__titulo')
-// var textoColorido = document.querySelector('.titulo-destaque')
-
-// var contadorNome = 0
-// var contadorSobreNome = 0
-
-// function escreverNome() {
-//     if (contadorNome < nome.length) {
-//         textoElemento.textContent += nome.charAt(contadorNome)
-//         console.log('Escrevendo nome:', nome.charAt(contadorNome))
-//         contadorNome++
-//         setTimeout(escreverNome, atraso)
+//     if (senha.type === 'password') {
+//         senha.type = 'text'
 //     } else {
-//         console.log('Nome completo escrito. Iniciando sobrenome...')
-//         escreverSobreNome()
+//         senha.type = 'password'
 //     }
 // }
 
-// function escreverSobreNome() {
-//     if (contadorSobreNome < sobreNome.length) {
-//         textoColorido.textContent += sobreNome.charAt(contadorSobreNome)
-//         console.log(
-//             'Escrevendo sobrenome:',
-//             sobreNome.charAt(contadorSobreNome)
-//         )
-//         contadorSobreNome++
-//         setTimeout(escreverSobreNome, atraso)
-//     }
-// }
+// document.getElementById('projetos').addEventListener('click', function () {
+//     this.classList.add('clicked')
+// })
 
-// // Inicia o processo escrevendo o nome primeiro
-// escreverNome()
+document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.cabecalho__menu__link')
+
+    links.forEach(link => {
+        link.addEventListener('click', function (event) {
+            // Remove active class from all links
+            links.forEach(l => l.classList.remove('active'))
+            // Add active class to the clicked link
+            this.classList.add('active')
+        })
+
+        // Adiciona a classe active ao link correspondente à página atual
+        if (link.href === window.location.href) {
+            link.classList.add('active')
+        }
+    })
+})

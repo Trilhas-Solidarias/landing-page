@@ -66,6 +66,120 @@ body {
     color: var(--cor-terciaria);
 
     text-decoration: none;
+
+    /* display: inline-block; */
+    position: relative;
+
+    /* animation: fadeInMove 1s forwards; */
+}
+
+/* .cabecalho__menu__link:hover {
+    text-decoration: underline;
+} */
+
+.cabecalho__menu__link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--cor-terciaria);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    margin-bottom: -5px;
+}
+.cabecalho__menu__link:hover:after,
+.cabecalho__menu__link.active:after {
+    width: 100%;
+    left: 0;
+    margin-bottom: -5px;
+}
+/* @media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+} */
+
+.apresentacao__conteudo__titulo::after {
+    content: '|';
+    animation: piscar 0.5s infinite;
+}
+
+@keyframes piscar {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* logo aparecendo da esquerda*/
+@keyframes aparecerDaEsquerda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* aparecendo da direita*/
+@keyframes aparecerDaDireita {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animação dos link de menus aparecendo*/
+@keyframes AparecendoTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes AparecendoBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Imagem aparecendo com zoom */
+@keyframes zoom-img {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(100%);
+    }
 }
 
 .apresentacao {
@@ -212,10 +326,6 @@ body {
     .apresentacao__links__navegacao {
         width: 100%;
     }
-}
-
-.cabecalho__menu__link:hover {
-    text-decoration: underline;
 }
 
 /* body {

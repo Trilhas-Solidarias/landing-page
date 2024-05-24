@@ -1,5 +1,5 @@
-var texto = 'NAUM '
-var texto2 = 'LEAL'
+var texto = 'Naum '
+var texto2 = 'Leal'
 
 var atraso = 200
 var textoElemento = document.querySelector('.apresentacao__conteudo__titulo')
@@ -7,7 +7,7 @@ var textoElemento = document.querySelector('.apresentacao__conteudo__titulo')
 var strongElement = document.createElement('strong') // Criar um novo elemento strong
 strongElement.classList.add('titulo-destaque') // Definir a classe do novo strong
 
-var contadorDeLetras = 0
+var contadorDeLetras = -1
 function escreverTexto() {
     if (contadorDeLetras < texto.length) {
         textoElemento.textContent += texto.charAt(contadorDeLetras)

@@ -66,10 +66,32 @@ body {
     color: var(--cor-terciaria);
 
     text-decoration: none;
+
+    position: relative;
 }
 
 .cabecalho__menu__link.clicked {
     text-decoration: underline;
+}
+
+.cabecalho__menu__link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--cor-terciaria);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    margin-bottom: -5px;
+}
+.cabecalho__menu__link:hover:after,
+.cabecalho__menu__link.active:after {
+    width: 100%;
+    left: 0;
+    margin-bottom: -5px;
 }
 
 .apresentacao {
@@ -228,8 +250,4 @@ body {
     .apresentacao__links__navegacao {
         width: 100%;
     }
-}
-
-.cabecalho__menu__link:hover {
-    text-decoration: underline;
 }
