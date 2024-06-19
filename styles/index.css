@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #ff671f;
+    --cor-secundaria: #e9e1cd;
+    --cor-terciaria: #253127;
+    --cor-hover: #272727;
+    /* --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727; */
+
+    /* --cor-primaria: #fa7070;
+    --cor-secundaria: #c6ebc5;
+    --cor-terciaria: #fbf2cf;
+    --cor-hover: #a1c298; */
+
+    /* coffe */
+    /* 
+    --cor-primaria: #2c3639;
+    --cor-secundaria: #dcd7c9;
+    --cor-terciaria: #a27b5c;
+    --cor-hover: #3f4e4f; */
+
+    /* Dark */
+
+    /* --cor-primaria: #0f0e0e;
+    --cor-secundaria: #eeeeee;
+    --cor-terciaria: #8b9a46;
+    --cor-hover: #541212; */
+
+    --font-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+
+    background-color: var(--cor-secundaria);
+
+    margin: 0 70px 0 70px;
+}
+
+.sobreNos {
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.sobreNos h2 {
+    color: var(--cor-primaria);
+
+    font-weight: bolder;
+}
+
+.sobreNos__content {
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.sobreNos__content__links__voluntarios {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+
+    font-weight: bolder;
+
+    padding: 5px;
+
+    border: 1px solid transparent;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+}
+
+.sobreNos__content__links__ong {
+    color: var(--cor-primaria);
+
+    font-weight: bolder;
+
+    padding: 5px;
+
+    border: 1px solid var(--cor-primaria);
+
+    border-radius: 5px;
+
+    text-decoration: none;
+}
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.depoimentos h2 {
+    color: var(--cor-primaria);
+}
+
+.depoimentos__cards {
+    display: flex;
+}
+
+.depoimentos__cards__card {
+    width: 300px;
+}
+
+.depoimentos__cards__card__cabecalho {
+    display: flex;
+}
+
+.depoimentos__cards__card__cabecalho img {
+    width: 50px;
+
+    border-radius: 50%;
+}
+
+.depoimentos__cards__card__estrelas {
+    display: flex;
+
+    gap: 5px;
+}
+
+.depoimentos__cards__card__estrelas img {
+    width: 15px;
+}
