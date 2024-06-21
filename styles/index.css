@@ -1,135 +1,328 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
-    --cor-primaria: #ff671f;
-    --cor-secundaria: #e9e1cd;
-    --cor-terciaria: #253127;
-    --cor-hover: #272727;
-    /* --cor-primaria: #000000;
+  --cor-primaria: #ff671f;
+  --cor-fundo-primaria: #ffff;
+  --cor-secundaria: #e9e1cd;
+  --cor-terciaria: #253127;
+  --cor-hover: #272727;
+  --cor-retangulo: #faf7f1;
+  --cor-fonte-retangulo: #3e5b43;
+
+  /* --cor-primaria: #000000;
     --cor-secundaria: #f6f6f6;
     --cor-terciaria: #22d4fd;
     --cor-hover: #272727; */
 
-    /* --cor-primaria: #fa7070;
+  /* --cor-primaria: #fa7070;
     --cor-secundaria: #c6ebc5;
     --cor-terciaria: #fbf2cf;
     --cor-hover: #a1c298; */
 
-    /* coffe */
-    /* 
+  /* coffe */
+  /* 
     --cor-primaria: #2c3639;
     --cor-secundaria: #dcd7c9;
     --cor-terciaria: #a27b5c;
     --cor-hover: #3f4e4f; */
 
-    /* Dark */
+  /* Dark */
 
-    /* --cor-primaria: #0f0e0e;
+  /* --cor-primaria: #0f0e0e;
     --cor-secundaria: #eeeeee;
     --cor-terciaria: #8b9a46;
     --cor-hover: #541212; */
 
-    --font-primaria: 'Krona One', sans-serif;
-    --font-secundaria: 'Montserrat', sans-serif;
+  --font-primaria: "Krona One", sans-serif;
+  --font-secundaria: "Montserrat", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    background-color: var(--cor-secundaria);
+  background-color: var(--cor-fundo-primaria);
 
-    margin: 0 70px 0 70px;
+  margin: 0 70px 0 70px;
+  position: relative;
 }
 
-.sobreNos {
-    display: flex;
 
-    justify-content: space-around;
+.introducao-container {
+  display: flex;
+
+  height: max-content;
+  justify-content: space-between;
+}
+.header-LandingPage {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 30px;
+}
+.header-Titulo {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Dongle", sans-serif;
+  color: var(--cor-primaria);
+}
+
+.header-list-options {
+  display: flex;
+  gap: 50px;
+}
+.header-options {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Dongle", sans-serif;
+  color: var(--cor-primaria);
+}
+
+.introducao-textos {
+  width: 546px;
+  margin-top: 80px;
+}
+.titulo-introducao {
+  font-size: 64px;
+  font-weight: 700;
+  font-family: dongle, sans-serif;
+  text-align: start;
+  line-height: 0.85;
+  color: var(--cor-terciaria);
+  
+}
+
+.paragrafo-introducao {
+  font-size: 18px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  text-align: start;
+  line-height: 1.5;
+  padding-top: 15px;
+  width: 546px;
+  color: var(--cor-fonte-retangulo);
+}
+
+.botoes-introducao {
+  display: flex;
+  gap: 34px;
+  padding-top: 30px;
+}
+.quero-ser-voluntario {
+  padding: 10px;
+  height: 44px;
+  font-size: 36px;
+  width: 240px;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  font-family: dongle, sans-serif;
+  background-color: var(--cor-primaria);
+  border: none;
+  color: var(--cor-secundaria);
+  border-radius: 8px;
+}
+.sou-uma-ong {
+  padding: 10px;
+  height: 44px;
+  width: 200px;
+  font-size: 36px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: dongle, sans-serif;
+  background: transparent;
+  border: solid 2px var(--cor-primaria);
+  color: var(--cor-primaria);
+  border-radius: 8px;
+}
+
+.midias-introducao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  height: max-content;
+  margin-right: 70px;
+  position: relative;
+}
+.imagem-introducao {
+position: absolute;
+  margin-left: 30px;
+  
+  z-index: 0;
+
+}
+
+.elipses-introducao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: -1;
+  padding: 20px;
+}
+.elipse-interna-introducao {
+  z-index: -1;
+  position: absolute;
+}
+.primeiro-ret-midias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 185px;
+  background-color: var(--cor-retangulo);
+  color: #3e5b43;
+  height: 51px;
+  font-size: 12px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  margin-right: 360px;
+  margin-bottom: 45px;
+  border-radius: 8px;
+  padding-inline: 12px;
+  padding-block: 4px;
+}
+.segundo-ret-midias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 180px;
+  height: 107px;
+  font-size: 20px;
+  background-color: var(--cor-retangulo);
+  color: #3e5b43;
+  font-weight: 600;
+  font-family: "Be Vietnam Pro", sans-serif;
+  position: absolute;
+  z-index: 1;
+  margin-left: 348px;
+  margin-top: 52px;
+  border-radius: 8px;
+}
+
+.terceiro-ret-midias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 174px;
+  height: 95px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--cor-retangulo);
+  color: #3e5b43;
+  font-family: "Be Vietnam Pro", sans-serif;
+  position: absolute;
+  margin-right: 270px;
+  margin-top: 300px;
+  border-radius: 8px;
+  text-align: center;
+  padding-inline: 10px;
+  z-index: 1;
+}
+
+.barra-laranja{
+    margin-top: 64px;
+    width: calc(100% + 140px); /* 100% + margem do body */
+    margin-inline: -70px; /* margem negativa igual à margem do body */
+}
+.sobreNos {
+  display: flex;
+
+  justify-content: space-around;
 }
 
 .sobreNos h2 {
-    color: var(--cor-primaria);
+  color: var(--cor-primaria);
 
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .sobreNos__content {
-    width: 400px;
+  width: 400px;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    gap: 10px;
+  gap: 10px;
 }
 
 .sobreNos__content__links__voluntarios {
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
 
-    font-weight: bolder;
+  font-weight: bolder;
 
-    padding: 5px;
+  padding: 5px;
 
-    border: 1px solid transparent;
+  border: 1px solid transparent;
 
-    border-radius: 5px;
+  border-radius: 5px;
 
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .sobreNos__content__links__ong {
-    color: var(--cor-primaria);
+  color: var(--cor-primaria);
 
-    font-weight: bolder;
+  font-weight: bolder;
 
-    padding: 5px;
+  padding: 5px;
 
-    border: 1px solid var(--cor-primaria);
+  border: 1px solid var(--cor-primaria);
 
-    border-radius: 5px;
+  border-radius: 5px;
 
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .depoimentos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .depoimentos h2 {
-    color: var(--cor-primaria);
+  color: var(--cor-primaria);
 }
 
 .depoimentos__cards {
-    display: flex;
+  display: flex;
 }
 
 .depoimentos__cards__card {
-    width: 300px;
+  width: 300px;
 }
 
 .depoimentos__cards__card__cabecalho {
-    display: flex;
+  display: flex;
 }
 
 .depoimentos__cards__card__cabecalho img {
-    width: 50px;
+  width: 50px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .depoimentos__cards__card__estrelas {
-    display: flex;
+  display: flex;
 
-    gap: 5px;
+  gap: 5px;
 }
 
 .depoimentos__cards__card__estrelas img {
-    width: 15px;
+  width: 15px;
 }
