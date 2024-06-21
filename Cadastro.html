@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cadastro</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1>Criar uma conta</h1>
+        <form id="register-form">
+            <div class="full-box spacing">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="" >
+            </div>
+            <div class="full-box spacing">
+                <label for="username">Usuário:</label>
+                <input type="username" name="username" id="username" placeholder="" >
+            </div>
+            <div class="full-box spacing">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="" >
+            </div>
+            
+            <div class="half-box spacing">
+                <label for="password"> Senha: </label>
+                <input type="password" name="password" id="password" placeholder="" >
+            </div>
+            <div class="half-box spacing">
+                <label for="confirm-password"> Repita sua senha: </label>
+                <input type="confirm-password" name="confirm-password" id="confirm-password" placeholder="" >
+            </div>
 
-        <link rel="stylesheet" href="styles/Cadastro.css" />
-    </head>
-    <body></body>
+            <div id="btn-submit">
+                <a class="apresentacao"  href="#"> Criar </a>
+            </div>
+
+            <div id="btn-login">
+                <a class="apresentacao2"  href="#"> Já tenho uma conta </a>
+            </div>
+
+            <div class="apresentacao_links"> 
+                <a class="apresentacao__frame" href="#"> 
+                    <img src="Frame.png"> </a>
+            </div>
+
+            <div>
+                <div class="apresentacao_social">
+                    <a class="social" href="#"> 
+                        <img src="Facebook.png">
+                    </a>
+                    <a class="social" href="#">
+                        <img src="Google.png"
+                    </a>
+
+                </div> <!--btn-social-->
+            </div>
+
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script> src="js/script.js"</script>
+</body>
 </html>
