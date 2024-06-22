@@ -240,19 +240,27 @@ position: absolute;
     margin-inline: -70px; /* margem negativa igual à margem do body */
 }
 .sobreNos {
-
-  width: 100%;
+  
   display: flex;
+  
 
   justify-content: space-around;
 
+  margin-top: 50px;
   margin-bottom: 100px;
+}
+
+.sobreNos h3 { 
+
+  font-weight: bold;
+  font-size: 32px;
 }
 
 .sobreNos h2 {
   color: var(--cor-primaria);
 
-  font-weight: bolder;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .sobreNos__content__links{
@@ -262,6 +270,8 @@ position: absolute;
 
 .sobreNos__content {
   width: 400px;
+
+  margin-left: -70px;
 
   display: flex;
   flex-direction: column;
@@ -308,33 +318,40 @@ position: absolute;
   height: 336px;
 }
 
-/* .depoimentos {
-  display: flex;
-  flex-direction: column;
-} */
+.depoimentos {
+  margin-left: -15px;
+
+}
 
 .depoimentos h2 {
   display: flex;
 
   color: var(--cor-primaria);
-  /* align-items: center; */
+  
   justify-content: center;
   margin-bottom: 60px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 32px;
 }
 
 .depoimentos__cards {
   display: flex;
   justify-content: space-around;
 
-  /* row-gap: 50px; */
+  /* gap: 50px; */
 }
 
 .depoimentos__cards__card {
   width: 300px;
+
+  
 }
 
 .depoimentos__cards__card__cabecalho {
   display: flex;
+
+  
 }
 
 .depoimentos__cards__card__cabecalho img {
@@ -345,7 +362,21 @@ position: absolute;
 
 .depoimentos__cards__card__cabecalho__titulo h4{
   color: var(--cor-primaria);
+  padding: 5px 10px;
+  
 
+}
+
+.depoimentos__cards__card__cabecalho__titulo p{
+  
+  padding: 5px 10px;
+
+
+}
+
+.depoimentos__cards__card__paragrafo{
+ 
+  text-align: justify;
 }
 
 .depoimentos__cards__card__estrelas {
@@ -358,7 +389,8 @@ position: absolute;
 
 .depoimentos__cards__card__estrelas i {
   color: var(--cor-primaria);
+
+  padding: 10px 1px;
+
 }
-.depoimentos__cards__card__estrelas img {
-  width: 15px;
-}
+
