@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trinhas Solidárias</title>
+    <title>Trilhas Solidárias</title>
 
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,10 +23,10 @@
         <header class="header-LandingPage">
             <h1 class="header-Titulo">Trilhas Solidárias</h1>
             <ul class="header-list-options">
-                <li class="header-options">Como Funciona</li>
-                <li class="header-options">Sobre Nós</li>
-                <li class="header-options">Depoimentos</li>
-                <li class="header-options">Contato</li>
+                <li class="header-options"><a href="#funcionamento">Como Funciona</a></li>
+                <li class="header-options"><a href="#sobreNos">Sobre nós</a></li>
+                <li class="header-options"><a href="#depoimentos">Depoimentos</a></li>
+                <li class="header-options"><a href="#contato">Contato</a></li>
             </ul>
         </header>
         <div class="introducao-container">
@@ -37,8 +37,8 @@
                     Nossa<br>plataforma gamificada facilita o processo seletivo, tornando a colaboração social mais
                     acessível e envolvente.</p>
                 <div class="botoes-introducao">
-                    <button class="quero-ser-voluntario">Quero ser voluntário</button>
-                    <button class="sou-uma-ong">Sou uma ONG</button>
+                    <a href="login-voluntario.html" class="botao-primario">Quero ser voluntário</a>
+                    <a href="login-ong.html" class="botao-secundario">Sou uma ONG</a>
                 </div>
             </div>
             <div class="midias-introducao">
@@ -61,7 +61,7 @@
     
 
         <!-- Como Funciona?-->
-        <section class="funcionamento">
+        <section class="funcionamento" id="funcionamento">
             <div class="bloco-superior-funcionamento"> 
                 <h1 class="como-funciona">Como funciona?</h1>
                 <p class="paragrafo-funcionamento">Nossa plataforma gamificada conecta ONGs e voluntários de forma dinâmica e envolente.<br>
@@ -117,7 +117,7 @@
 
  
     <!-- sobre nós -->
-    <section class="sobreNos">
+    <section class="sobreNos" id="sobreNos">
         <div class="sobreNos__content">
             <h3>Sobre nós</h3>
             <h2>Uma equipe de colaboradores altamente qualificados!</h2>
@@ -130,8 +130,8 @@
                 positivo no mundo!
             </p>
             <div class="sobreNos__content__links">
-                <a class="sobreNos__content__links__voluntarios" href="#">Quero ser voluntário</a>
-                <a class="sobreNos__content__links__ong" href="#">Sou uma ONG</a>
+                <a href="login-voluntario.html" class="botao-primario">Quero ser voluntário</a>
+                <a href="login-ong.html" class="botao-secundario">Sou uma ONG</a>
             </div>
         </div>
         <img src="assets/Group 9.png" alt="Coleção de imagens de pessoas" />
@@ -140,7 +140,7 @@
 
 
     <!-- depoimentos -->
-    <section class="depoimentos">
+    <section class="depoimentos" id="depoimentos">
         <h2>Uma comunidade <br> de usuários contentes!</h2>
 
         <div class="depoimentos__cards">

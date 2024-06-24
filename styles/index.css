@@ -51,6 +51,44 @@ body {
   position: relative;
 }
 
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+
+.botao-primario {
+  background-color: var(--cor-primaria);
+  color: var(--cor-fundo-primaria);
+  padding: 2px 14px;
+  border-radius: 6px;
+  font-family: "Dongle", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  transition: transform .8s;
+}
+
+.botao-primario:hover {
+  transform: translate(0, -10px);
+}
+
+.botao-secundario {
+  border: 2px solid var(--cor-primaria);
+  border-radius: 6px;
+  padding: 2px 14px;
+  font-family: "Dongle", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--cor-primaria); 
+  transition: transform .8s;
+}
+
+.botao-secundario:hover {
+  transform: translate(0, -10px);
+}
+
+
+
 .introducao-container {
   display: flex;
 
@@ -82,6 +120,11 @@ body {
   font-weight: 700;
   font-family: "Dongle", sans-serif;
   color: var(--cor-primaria);
+  transition: transform .8s;
+}
+
+.header-options:hover {
+  transform: translate(0, -10px);
 }
 
 .introducao-textos {
@@ -261,17 +304,17 @@ body {
 }
 .cadastro-titulo {
   font-size: 40px;
-  font-family: dongle, sans-serif;
+  font-family: "Dongle", sans-serif;
 }
 
 .jogoInterativo-titulo {
   font-size: 40px;
-  font-family: dongle, sans-serif;
+  font-family: "Dongle", sans-serif;
 }
 
 .conexaoOng-titulo {
   font-size: 40px;
-  font-family: dongle, sans-serif;
+  font-family: "Dongle", sans-serif;
 }
 
 .cadastro-paragrafo {
@@ -343,23 +386,35 @@ body {
 
   margin-top: 50px;
   margin-bottom: 100px;
+
+  font-family: "Dongle", sans-serif;
+
+  width: 80%;
 }
 
 .sobreNos h3 {
-  font-weight: bold;
-  font-size: 32px;
+  font-size: 40px;
+  font-family: "Dongle", sans-serif;
 }
 
 .sobreNos h2 {
+  font-size: 60px;
+  font-family: dongle, sans-serif;
+  font-weight: 700;
   color: var(--cor-primaria);
-
-  font-weight: bold;
-  font-size: 30px;
+  line-height: 80%;
 }
 
 .sobreNos__content__links {
   display: flex;
   gap: 20px;
+}
+
+.sobreNos__content__links .botao-primario {
+}
+
+.sobreNos__content__links .botao-secundario { 
+
 }
 
 .sobreNos__content {
@@ -459,7 +514,12 @@ body {
 }
 
 .depoimentos__cards__card__paragrafo {
-  text-align: justify;
+  font-size: 16px;
+  color: #3e5b43;
+  font-weight: 500;
+  font-family: "Be Vietnam Pro", sans-serif;
+  /*width: 713px;*/
+  line-height: 1.5;
 }
 
 .depoimentos__cards__card__estrelas {
