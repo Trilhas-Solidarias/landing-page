@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cadastro</title>
 
-        <link rel="stylesheet" href="styles/Cadastro.css" />
-    </head>
-    <body></body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="styles/Cadastro.css" />
+</head>
+
+<body>
+    <main>
+        <img src="assets/Group 30.png" alt="">
+
+
+        <section class="formulario">
+            <h1>Criar uma conta</h1>
+            <form class="form" action="" method="post">
+                <div class="formulario__inputs">
+                    <div class="formulario__lado__esquerdo">
+                        <label for="nome">Nome: </label>
+                        <input id="nome" type="text">
+
+                        <label for="usuario">Usuário: </label>
+                        <input id="usuario" type="text">
+
+                        <label for="email">E-mail: </label>
+                        <input id="email" type="email">
+
+                        <label for="senha">Senha: </label>
+                        <input id="senha" type="password">
+
+                    </div>
+
+                    <div class="formulario__lado__direito">
+                        <label for="sobreNome">Sobrenome: </label>
+                        <input id="sobreNome" type="text">
+
+                        <label for="repetirSenha">Repita sua senha: </label>
+                        <input id="repetirSenha" type="password">
+
+
+
+                    </div>
+                </div>
+                <div class="formulario__botoes">
+                    <input class="criar" type="submit" value="Criar">
+                    <input class="ja-tenho-uma-conta" type="submit" value="Já tenho uma conta">
+
+                </div>
+                <img src="assets/Frame 101.png" alt="">
+                <div class="formulario__form__links">
+                    <a href="#"><img src="assets/Facebook.png" alt=""></a>
+                    <a href="#"><img src="assets/Google.png" alt=""></a>
+
+                </div>
+
+
+            </form>
+
+        </section>
+    </main>
+</body>
+
 </html>
