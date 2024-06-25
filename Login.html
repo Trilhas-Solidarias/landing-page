@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Login</title>
-
-        <link rel="stylesheet" href="styles/Login.css" />
-    </head>
-    <body></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login - Voluntários</title>
+    <link rel="stylesheet" href="styles/Login.css">
+    <!-- Importação da fonte Dongle do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-login">
+        <div class="content-box">
+            <h2>Login - Voluntários</h2>
+            <form>
+                <div class="input-box">
+                    <label for="email">E-mail ou usuário</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail ou usuário" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+                <div class="Lembrar-me">
+                    <label>
+                        <input type="checkbox" name="remember"> Lembrar-me
+                    </label>
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
+                <div class="input-box">
+                    <button type="submit">Entrar</button>
+                </div>
+                <div class="input-box">
+                    <p>Não tem uma conta? <a href="#">Criar uma conta</a></p>
+                </div>
+            </form>
+            <h4>Ou continue com</h4>
+            <ul class="ul">
+                <li><img src="assets/img-facebook.jpeg" alt="Logo do Facebook e Google"></li>
+            </ul>
+        </div>
+        <div class="img-login">
+            <img src="assets/login-foto.png" alt="Foto de uma modelo">
+        </div>
+    </div>
+</body>
 </html>
+
