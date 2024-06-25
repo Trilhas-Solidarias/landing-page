@@ -600,6 +600,8 @@ a {
   justify-content: space-around;
   font-family: "Be Vietnam Pro", sans-serif;
   padding: 5rem 2rem;
+
+  gap: 300px;
 }
 
 .esquerda {
@@ -608,8 +610,12 @@ a {
 
 .direita {
   width: 50%;
+
   font-weight: 555;
+
 }
+
+
 
 .direita h2 {
   font-family: "Dongle", sans-serif;
@@ -635,6 +641,8 @@ textarea {
 .register-form {
   display: flex;
   flex-wrap: wrap;
+
+  gap: 11px;
 }
 
 .input-group,
@@ -689,12 +697,17 @@ footer {
   padding: 50px 0;
   display: flex;
   justify-content: center;
+
+  margin: 0 -70px;
 }
+
+
 
 .upper-group {
   display: flex;
   gap: 5rem;
   padding-bottom: 2rem;
+
 }
 
 .menus-nav {
