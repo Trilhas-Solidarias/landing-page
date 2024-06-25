@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,29 +10,32 @@
     border: none;
 }
 
-input, label{
+input,
+label {
     display: block;
     width: 100%;
 }
 
-input:focus, label:focus{
+input:focus,
+label:focus {
     outline-style: none;
 }
 
-a{
+a {
     color: #ff671f;
 }
-body{
+
+body {
     padding-top: 5vh;
     background-image: url('../BackgroundOng.png');
     background-size: cover;
     background-position: left 10% bottom 10%;
-    
-    
+
+
 }
 
-/* form */ 
-#main-container{
+/* form */
+#main-container {
     width: 500px;
     margin-left: auto;
     margin-right: 5%;
@@ -42,37 +45,38 @@ body{
 
 }
 
-#main-container h1{
+#main-container h1 {
     text-align: center;
     margin-bottom: 10px;
-    font-size: 1.6rem; /*adptada ao elemento root */
+    font-size: 1.6rem;
+    /*adptada ao elemento root */
     font-family: "Dongle", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 50px;
 }
 
-form{
+form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.full-box{
+.full-box {
     flex: 1 1 100%;
     position: relative;
 }
 
-.half-box{
+.half-box {
     flex: 1 1 45%;
     position: relative;
 }
 
-.spacing{
+.spacing {
     margin-right: 2.5%;
 }
 
-label{
+label {
     font-weight: bold;
     font-size: .8rem;
     font-family: "Dongle", sans-serif;
@@ -81,36 +85,36 @@ label{
     font-size: 30px;
 }
 
-input{
+input {
     width: 100%;
     cursor: pointer;
     background: #FAF7F1;
     border-radius: 8px;
     padding: 13px;
-    font-size:  .9rem;
+    font-size: .9rem;
     margin-bottom: 40px;
 }
 
-input{
+input {
     border-color: #ff671f;
 }
 
-.apresentacao{
+.apresentacao {
     background-color: #ff671f;
-    width: 150px ;
+    width: 150px;
     text-align: center;
     border-radius: 08px;
     font-size: 30px;
-    padding: 02px 52px ;
+    padding: 02px 52px;
     text-decoration: none;
     color: #ffffff;
     font-family: "Dongle", sans-serif;
-    
+
 }
 
-.apresentacao2{
+.apresentacao2 {
     background-color: #ffffff;
-    width: 150px ;
+    width: 150px;
     margin: 10px 50px 20px;
     text-align: center;
     border-radius: 08px;
@@ -118,14 +122,14 @@ input{
     border-style: solid;
     border-color: #ff671f;
     font-size: 30px;
-    padding: 01px 10px ;
+    padding: 01px 10px;
     text-decoration: none;
     color: #ff671f;
     font-family: "Dongle", sans-serif;
-    
+
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
