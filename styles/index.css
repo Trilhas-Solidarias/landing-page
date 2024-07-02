@@ -260,7 +260,9 @@ a {
 }
 
 .barra-laranja {
-  margin-top: 64px;
+  margin: 0;
+  padding: 0;
+  margin-top: 4rem;
   width: calc(100% + 140px);
   /* 100% + margem do body */
   margin-inline: -70px;
@@ -530,6 +532,9 @@ a {
 
 .depoimentos__cards__card {
   width: 300px;
+  background-color: #FAF7F1;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
 }
 
 .depoimentos__cards__card__cabecalho {
@@ -727,12 +732,13 @@ footer {
 .titulo-midias .midias {
   display: flex;
   flex-direction: row;
+  margin-top: 1rem;
   color: #FFFFFF;
   gap: 1.8rem;
 }
 
 .titulo-midias .midias i {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .menus-nav h4 {
@@ -761,4 +767,188 @@ footer {
   text-align: center;
   font-size: 11px;
   padding-top: 1rem;
+}
+
+
+@media (width <= 1250px) {
+  html {
+    display: flex;
+    
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    margin: 0;
+  }
+
+  .barra-laranja {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header-LandingPage {
+    display: none;
+    padding: 0;
+  }
+
+  .introducao-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .botoes-introducao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titulo-introducao {
+    text-align: center;
+  }
+
+  .paragrafo-introducao {
+    text-align: center;
+  }
+
+  .funcionamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bloco-superior-funcionamento {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .paragrafo-funcionamento {
+    width: 26rem;
+  }
+
+  .lado-esquerdo-funcionalidades {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .textos-blocos {
+    margin: 0;
+  }
+
+  .lado-direito-funcionalidades {
+    margin: 0;
+  }
+
+  .depoimentos {
+    margin: 0;
+  }
+
+  .depoimentos__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobreNos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .depoimentos h2 {
+    margin-bottom: 0;
+  }
+
+  .depoimentos__cards__card {
+    margin-top: 2rem;
+  }
+
+  .sobreNos__content {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sobreNos__content__links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-conteudos-funcionalidades {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contato {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contato .esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contato .esquerda img {
+    width: 20rem;
+  }
+
+  .contato .direita {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .contato .titulo-subtitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .contato h2, .contato p {
+    width: 20rem;
+  }
+
+  footer {
+    margin: 0;
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .upper-group {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: stretch;
+  }
+
+  .menus-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 2rem;
+  }
 }

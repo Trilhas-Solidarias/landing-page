@@ -109,27 +109,7 @@ body {
     gap: 70px;
 }
 
-button {}
-
-.conta-existente {
-    background: none;
-    border: 2px solid #FF671F;
-    color: #FF671F;
-
-    width: 200px;
-
-    padding: 2px;
-
-    border-radius: 8px;
-    cursor: pointer;
-
-
-
-
-
-}
-
-.proximo {
+.botao-primario {
     background: #FF671F;
 
     width: 200px;
@@ -139,7 +119,20 @@ button {}
     border-radius: 8px;
     cursor: pointer;
     color: white;
+    text-decoration: none;
 }
+
+.botao-secundario {
+    border: 2px solid #FF671F;
+    border-radius: 6px;
+    padding: 2px 14px;
+    font-family: "Dongle", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #FF671F;
+    transition: transform .8s;
+    text-decoration: none;
+  }
 
 .midias-sociais {
     display: flex;
@@ -147,6 +140,7 @@ button {}
     text-align: center;
     align-items: center;
     color: #253127;
+    
 }
 
 .midias-sociais .titulo-midias-sociais {
